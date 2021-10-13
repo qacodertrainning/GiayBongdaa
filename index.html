@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e7f35db0bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Lan 3</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+        <!-- begin nav -->
+        <a href="./index.html"><img src="assets/img/slider/QA trắng .png" alt="" class="header-logo"></a>
+        <ul id="nav">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="#">Bóng đá</a></li>
+            <li><a href="#">phụ kiện</a></li>   
+            <li><a href="#">Giày thể thao </a></li>
+            <li><a href="#"">Giày bóng đá
+                <i class="icon-down fas fa-sort-down"></i>
+            </a>
+                <ul class="subnav">
+                    <li><a href="./spham.html">NIKE</a></li>
+                    <li><a href="./spham.html">ADIDAS</a></li>
+                    <li><a href="./spham.html">MIZUNO</a></li>
+                </ul>
+                <!-- end subnav -->
+            </li>
+        </ul>
+        <!-- end nav  -->
+        
+        <div id="search">
+            <input class="search-box" type="text" placeholder="Tìm Kiếm ">
+            <div class="search-btn">
+                <i class="icon-search fas fa-search"></i>
+            </div>
+        </div>
+        </div>
+        <!-- end header -->
+        <!-- begin slider -->
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./assets/img/slider/1.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="./assets/img/slider/2.jpg" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="./assets/img/slider/3.jpg" alt="New york" style="width:100%;">
+                </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          
+        <!-- end slider -->
+        
+        <!-- begin content -->
+        <div id="content">
+            <!-- about section -->
+            <img src="./assets/img/flash-sale-logo.png" alt="" style="margin-left: 820px;">
+            <h1 style="margin-left: 820px ; font-weight: bold;">KẾT THÚC SAU </h1>
+            <div id="countdown">
+                
+                <div id='tiles'></div>
+                <div class="labels">
+                  <li>Ngày</li>
+                  <li>Giờ</li>
+                  <li>Phút</li>
+                  <li>Giây</li>
+                </div>
+              </div>
+              <script language="javascript">
+                var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date
+     var days, hours, minutes, seconds; // variables for time units
+     var countdown = document.getElementById("tiles"); // get tag element
+     getCountdown();
+     setInterval(function () { getCountdown(); }, 1000);
+     function getCountdown(){
+         // find the amount of "seconds" between now and target
+         var current_date = new Date().getTime();
+         var seconds_left = (target_date - current_date) / 1000;
+         days = pad( parseInt(seconds_left / 86400) );
+         seconds_left = seconds_left % 86400;
+              
+         hours = pad( parseInt(seconds_left / 3600) );
+         seconds_left = seconds_left % 3600;
+               
+         minutes = pad( parseInt(seconds_left / 60) );
+         seconds = pad( parseInt( seconds_left % 60 ) );
+         // format countdown string + set tag value
+         countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+     }
+     function pad(n) {
+         return (n < 10 ? '0' : '') + n;
+     }
+             </script>
+            <div class="content-section">
+                <img class="content-logo" src="assets/img/slider/EA_Sports.png" alt="">
+                
+                <p class="sub-heading-section">WE LOVE FOOTBALL</p>
+                <p class="content-about">“Thế giới đồ thể thao Quang Anh Sport” tự hào là một thương hiệu đồ thể thao mang đến sự hài lòng,
+                     sang trọng và cá tính cho khách hàng. Đến với chúng tôi, bạn sẽ được thỏa sức đắm chìm trong một thế giới bao gồm tất cả những đôi giày thể thao,
+                    những bộ thời trang thể thao trẻ trung, mạnh mẽ nhưng không kém phần sang trọng. Sản phẩm của chúng tôi là những đôi giày và những bộ đồ mang thương hiệu
+                     nổi tiếng như Adidas, Nike, Puma, Converse,... Một thế giới cho bạn thỏa sức lựa chọn, thể hiện phong cách và tự tin là chính mình. Đó cũng chính là khẩu hiệu
+                      và phương châm của chúng tôi: “BE YOURSELF” – LÀ CHÍNH MÌNH. Chúng tôi tin rằng với phương châm này, quý khách hàng sẽ hài lòng khi được là chính mình,
+                       tự tin thể hiện phong cách và cá tính trên những bước đi cùng đôi giày thể thao, bộ đồ tinh tế và mạnh mẽ. </p>  
+                <!-- about -->
+                <div class=" row about-list">
+                    <div class="col col-3 text-center">
+                        <p class="about-name">ÁO BÓNG ĐÁ</p>
+                        <img src="assets/img/Nike/Ronaldo-Mu.jpg" alt="" class="about-img">
+                    </div>
+        
+                    <div class="col col-3 text-center">
+                        <p class="about-name">GIÀY BÓNG ĐÁ</p>
+                        <img src="assets/img/Nike/7-3-2021-12-37-36-PM.jpg" alt="" class="about-img">
+                    </div>
+        
+                    <div class="col col-3 text-center">
+                        <p class="about-name">BA LÔ</p>
+                        <img src="assets/img/Nike/68305029_103868404307799_2111119388265414656_n.jpg" alt="" class="about-img">
+                    </div>
+                    
+                </div>
+            
+            </div>
+            <!-- item section -->
+            <div class="tour-background">
+                <div class="content-section">
+                    <h2 class="heading-section text-white">MẪU HOT 2021</h2>
+                    <p class="sub-heading-section text-white">Hãy họn cho mình một sản phẩm thật ưng ý!</p>
+                    <ul class="ticket">
+                        <li>ÁO ĐẤU RONALDO 2021<span class="deal">2.000.000</span></li>
+                        <li>NIKE MERCURIAL 2021<span class="Sold-out">Sold out</span></li>
+                        <li>BA LÔ ADIDAS CORE DUFFEL<span class="quantity">3</span></li>
+                    </ul>
+                    <!-- hot item -->
+                    <div class="row hot-list">
+                        <div class="col col-3 ">
+                            <a href="./aodau.html"><img src="assets/img/Nike/440542_559068_1430.png" alt="" class="hot-img"></a>
+                            <div class=" hot-body">
+                            <h3 class="heading-hot">ÁO ĐẤU RONALDO</h3>
+                            <p class="hot-time">Hàng mới hot!</p>
+                            <p class="hot-dsc">Hàng chính hãng 100%</p>
+                            <a href="#" class="hot-buy-ticket">MUA NGAY</a>
+                            </div>
+                        </div>
+
+                        <div class=" col col-3 ">
+                            <a href="./spham.html"><img src="assets/img/Nike/nike mer.jfif" alt="" class="hot-img"></a>
+                        
+                            <div class=" hot-body">
+                            <h3 class="heading-hot">NIKE MERCURIAL</h3>
+                            <p class="hot-time">Bạn đã sẵn sàng ra sân ?</p>
+                            <p class="hot-dsc">Hàng chính hãng 100%</p>
+                            <a href="#" class="hot-buy-ticket">MUA NGAY</a>
+                            </div>
+                        </div>
+
+                        <div class="col col-3 ">
+                            <img src="assets/img/Nike/túi adidas.jpg" alt="" class="hot-img">
+                        
+                            <div class="hot-body">
+                            <h3 class="heading-hot">TÚI BÓNG ĐÁ</h3>
+                            <p class="hot-time">Theo bạn mọi nơi !</p>
+                            <p class="hot-dsc">Hàng chính hãng 100%</p>
+                            <a href="#" class="hot-buy-ticket">MUA NGAY</a>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Contact section  -->
+            <div class="content-section" ">
+                <h2 class="heading-section">CONTACT</h2>
+                <p class="sub-heading-section">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-2 contact-info ">
+                        <p><i class="ti-location-pin"></i> Đô lương , Nghệ An</p>
+                        <p><i class="ti-mobile"></i> Phone: 0842456888</p>
+                        <p><i class="ti-email"></i> Email: qnngongoc@gmail.com</p>
+                    </div>
+                    <div class="col col-2 contact-form">
+                        <form action="">
+                            <div class="row ">
+                                <div class="col col-2">
+                                    <input type="text" placeholder="Name" required class="form-control">
+                                </div>
+                                <div class="col col-2">
+                                    <input type="Email" placeholder="Email" required class="form-control">
+                                </div>
+                                
+                            </div>
+                            <div class="row ">
+                                <div class="col col-full mt8">
+                                    <input type="text" placeholder="Message" class="form-control" >
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND" class="form-submit mt16">
+                        </form>
+                    </div>
+                </div>
+                <video class="clip " controls>
+                    <source src="./assets/img/Nike/Nike Football Winner stays ( quảng cáo world cup 2014 ).mp4">
+                  </video>
+            </div>
+             
+            <!-- end contact -->
+            <!-- map -->
+            <img src="assets/img/Nike/Ronaldo my idol.jpg" alt="" class="content-map col-full ">
+            <!-- footer -->
+            <footer class="footer-info">
+                <i class="fab fa-facebook-square" ></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat"></i>
+                <i class="fab fa-pinterest-p"></i>  
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+               
+            </footer>
+        </div>
+        </div>
+        <!-- end content -->
+    </div>
+    <script type="text/javascript">
+        function hide_float_right() {
+            var content = document.getElementById('float_content_right');
+            var hide = document.getElementById('hide_float_right');
+            if (content.style.display == "none")
+            {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()"> Tắt quảng cáo [X]</a>'; }
+                else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()">Vui Lòng Liên Hệ </a>';
+            }
+            }
+            function myF(){
+              onl.style.display = "block";
+              
+            }
+            function un(){
+                onl.style.display = "none";
+            }
+        </script>
+            
+        <style>
+        .float-ck { position: fixed; bottom: 30px; z-index: 9000}
+        * html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;
+        #float_content_right {border: 0px ;}
+        #hide_float_right {text-align:right; font-size: 11px;}
+        #hide_float_right a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+        </style>
+        <body onload="myF()">
+            <div class="float-ck" style="right: 0px" >
+        <div id="hide_float_right">
+        <a href="javascript:hide_float_right()">Tắt quảng cáo[X]</a></div>
+        <div id="float_content_right">
+        <!-- Start quang cao-->
+            <img class="pop-logo" src="assets/img/slider/poplogo.png">
+        <!-- End quang cao -->
+        </div>
+        </div>
+            <div id="onl" style="position: fixed; bottom: 160px; top:60px;left:300px;z-index:100;">
+                <div style=" width:1000px; height: 200px;">
+                    <a href="javascript:un()" style="color:#F00;"> Tắt quảng cáo [X]</a>
+                    <img src="assets/img/Nike/pop3.png" width="800" height="800" />
+                </div>
+            </div>	
+</body>
+</html>
